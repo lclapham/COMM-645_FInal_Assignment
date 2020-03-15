@@ -1,8 +1,8 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: $site-fonts;
   font-size: 1em;
   line-height: 2em;
-  background: url("../images/bg.gif") $white-color repeat-x;
+  background: $bg-image $white-color repeat-x;
   margin: 0;
 }
 main {
@@ -73,16 +73,16 @@ footer {
   text-indent: -9999px;
 }
 .social-media div.one {
-  background: url("../images/social-media.png") 0 0;
+  background: $background-social 0 0;
 }
 .social-media div.two {
-  background: url("../images/social-media.png") -38px 0;
+  background: $background-social -38px 0;
 }
 .social-media div.three {
-  background: url("../images/social-media.png") -76px 0;
+  background: $background-social -76px 0;
 }
 .social-media div.four {
-  background: url("../images/social-media.png") -114px 0;
+  background: $background-social -114px 0;
 }
 
 /* MEDIA QUERIES */
@@ -186,7 +186,7 @@ footer {
     font-size: 1.4em;
   }
   header h3 {
-    color: #fff;
+    color: $white-color;
     font-size: 1em;
   }
   #content h3 {

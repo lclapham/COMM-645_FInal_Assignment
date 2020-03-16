@@ -20,7 +20,7 @@
   font-weight: 400;
 }
 #content #products {
-  @include productsTestimonials(460px, left);
+  @include productsTestimonials($commonWidth, left);
 }
 #content #products img {
   float: left;

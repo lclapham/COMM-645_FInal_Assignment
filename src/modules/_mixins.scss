@@ -58,7 +58,7 @@
     display: block;
   }
 
-@mixin productsTestimonials ($width: 460px, $float: right) {
+@mixin productsTestimonials ($width: $commonWidth, $float: right) {
     width: $width;
     float: $float;
 }

@@ -40,7 +40,7 @@
   
   @include break($medium-screen) {
     main {
-      width: 460px;
+      width: $commonWidth;
     }
     nav ul li {
       font-size: 0.8em;

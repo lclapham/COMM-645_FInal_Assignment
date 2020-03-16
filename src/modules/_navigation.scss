@@ -1,31 +1,48 @@
 figure {
-  width: 400px;
-  height: 190px;
-  background: $background-logo no-repeat 0 50px;
-  float: left;
-  display: block;
-  margin: 0;
+  @include figureLogo (400px, 190px, left, 0);
 }
+
 nav {
-  width: 540px;
-  height: 190px;
-  float: left;
-  text-align: right;
+  @include nav(540px, 190px, left);
+
+  ul {
+    @include listsFormat(none, 95px);
+    li {
+      display: inline;
+      font-size: 0.8em;
+      margin-right: 10px;
+      a {
+        color: $red-color;
+        text-decoration: none;
+        letter-spacing: -0.01em;
+        &:hover {
+          @include formatHover();
+        }
+      }
+    }
+  }
 }
-nav ul {
-  list-style-type: none;
-  margin-top: 95px;
-}
-nav ul li {
-  display: inline;
-  font-size: 0.8em;
-  margin-right: 10px;
-}
-nav ul li a {
-  color: $red-color;
-  text-decoration: none;
-  letter-spacing: -0.01em;
-}
-nav ul li a:hover {
-  color: $white-color;
-}
+
+// nav {
+//   width: 540px;
+//   height: 190px;
+//   float: left;
+//   text-align: right;
+// }
+// nav ul {
+//   list-style-type: none;
+//   margin-top: 95px;
+// }
+// nav ul li {
+//   display: inline;
+//   font-size: 0.8em;
+//   margin-right: 10px;
+// }
+// nav ul li a {
+//   color: $red-color;
+//   text-decoration: none;
+//   letter-spacing: -0.01em;
+// }
+// nav ul li a:hover {
+//   color: $white-color;
+// }

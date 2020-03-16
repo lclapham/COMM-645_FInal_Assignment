@@ -1,0 +1,56 @@
+@mixin nav($width, $height, $float) {
+  width: $width;
+  height: $height;
+  float: $float;
+  text-align: right;
+}
+
+@mixin listsFormat($style, $margin) {
+  list-style-type: $style;
+  margin-top: $margin;
+}
+
+@mixin formatHover() {
+  color: $white-color;
+}
+
+@mixin footFormat($width, $height, $align, $pad) {
+  width: $width;
+  height: $height;
+  background: $darker-grey;
+  text-align: $align;
+  color: $white-color;
+  padding-top: $pad;
+}
+
+@mixin socialMedia($val1, $val2) {
+  background: $background-social $val1 $val2;
+}
+
+@mixin footerLinks() {
+  display: block;
+  width: 36px;
+  height: 36px;
+  text-indent: -9999px;
+}
+
+@mixin headLineFormat($width, $height, $align) {
+  width: $width;
+  height: $height;
+  text-align: $align;
+}
+
+@mixin contentFormat($width) {
+  width: $width;
+}
+
+@mixin figureLogo($width, $height, $float, $margin) {
+    width: $width;
+    height: $height;
+    float: $float;
+    margin: $margin;
+    background: $background-logo no-repeat 0 50px;
+    display: block;
+  }
+
+

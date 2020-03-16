@@ -62,3 +62,9 @@
     width: $width;
     float: $float;
 }
+
+@mixin break($width) {
+    @media screen and (max-width: $width) {
+      @content;
+    }
+}

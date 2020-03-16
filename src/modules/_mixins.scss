@@ -1,3 +1,8 @@
+@mixin mainFormat($width: 940px){
+    width: $width;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 @mixin nav($width, $height, $float) {
   width: $width;
   height: $height;
@@ -34,7 +39,7 @@
   text-indent: -9999px;
 }
 
-@mixin headLineFormat($width, $height, $align) {
+@mixin headLineFormat($width: 100%, $height: 130px, $align: center) {
   width: $width;
   height: $height;
   text-align: $align;
@@ -53,4 +58,7 @@
     display: block;
   }
 
-
+@mixin productsTestimonials ($width: 460px, $float: right) {
+    width: $width;
+    float: $float;
+}

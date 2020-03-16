@@ -11,8 +11,8 @@
   padding-top: 50px;
 }
 #content {
-    @include contentFormat (940px);
-    margin: 20px auto;
+  @include contentFormat(940px);
+  margin: 20px auto;
 }
 #content h3 {
   color: $dark-grey;
@@ -20,8 +20,7 @@
   font-weight: 400;
 }
 #content #products {
-  width: 460px;
-  float: left;
+  @include productsTestimonials(460px, left);
 }
 #content #products img {
   float: left;
@@ -34,6 +33,5 @@
   line-height: 1em;
 }
 #content #testimonials {
-  width: 460px;
-  float: right;
+    @include productsTestimonials(460px, right);
 }

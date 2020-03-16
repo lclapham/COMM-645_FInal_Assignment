@@ -1,5 +1,6 @@
 figure {
-  @include figureLogo (400px, 190px, left, 0);
+  $logoWidth: 940px - 540px;
+  @include figureLogo ($logoWidth, 190px, left, 0);
 }
 
 nav {
